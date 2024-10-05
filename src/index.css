@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background-color: #1a1a1a; /* Dark background */
+    --text-color: #ffffff; /* White text */
+    --primary-color: #6b5e9c; /* Purple color */
+    --secondary-color: #4c3f6e; /* Darker purple */
+    --border-color: #333333; /* Dark border */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* or your preferred font */
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.card {
+    background-color: #2a2a2a; /* Darker card background */
+    border: 1px solid var(--border-color);
+}
+
+/* Additional styles for other components */

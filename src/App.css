@@ -1,0 +1,170 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Active Class */
+.active {
+  @apply text-purple-600 underline underline-offset-4;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.pagination a:hover {
+  background: #eee;
+}
+
+.pagination li.activerPagination {
+  background: rgb(195, 61, 248);
+  border-radius: 4px;
+  color: #fff;
+}
+
+.pagination-button {
+  background-color: #6a64f1; /* Purple theme */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #5b55e0; /* Darker purple on hover */
+}
+
+.pagination-button.disabled {
+  background-color: #d3d3d3; /* Disabled button styling */
+}
+
+/* Pagination Links */
+.pagination-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pagination-link a {
+  padding: 0.5rem 1rem;
+  color: #333; /* Black text */
+  background-color: white;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination-link a:hover {
+  background-color: #6a64f1; /* Hover purple */
+  color: white;
+}
+
+.pagination-link.active a {
+  background-color: #6a64f1; /* Active page styling */
+  color: white;
+  font-weight: bold;
+  border-radius: 0.25rem;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #fff; /* White background */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1.5rem; /* Padding for spacing */
+}
+
+/* Sidebar Section Headings */
+.sidebar h3 {
+  color: #6a64f1; /* Purple color for headings */
+}
+
+/* Blog Items in Sidebar */
+.blog-item {
+  padding-bottom: 0.5rem; /* Bottom padding for spacing */
+}
+
+/* Links in Sidebar */
+.sidebar a {
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.sidebar a:hover {
+  color: #6a64f1; /* Change link color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Pagination */
+  .pagination-container {
+    background-color: rgba(0, 0, 0, 0.2); /* Optional: Light background */
+    border-radius: 12px; /* Rounded corners for the pagination container */
+    padding: 10px 15px; /* Padding for overall spacing */
+  }
+  
+  .pagination-link {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .pagination-link:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  .pagination-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .pagination-button:disabled {
+    opacity: 0.6; /* Reduce opacity for disabled buttons */
+  }
+  
+
+  /* Sidebar */
+  .sidebar {
+    /* Optional: Add a subtle border or shadow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-item {
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+.blog-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten on hover */
+    transform: translateY(-2px); /* Slightly lift on hover */
+}
+
+}
+
+img {
+  transition: transform 0.3s ease, filter 0.3s ease; /* Add a smooth transition for transform and filter */
+}
+
+html {
+  scroll-behavior: smooth;
+}
